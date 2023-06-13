@@ -1,8 +1,8 @@
 {
   "name": "@monstrs/rpc-transformers",
   "version": "0.0.1",
-  "license": "MIT",
   "type": "module",
+  "license": "MIT",
   "exports": {
     "./package.json": "./package.json",
     ".": "./src/index.ts"
