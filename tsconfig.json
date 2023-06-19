@@ -29,8 +29,8 @@
     "isolatedModules": false,
     "moduleResolution": "nodenext",
     "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": false,
-    "noImplicitThis": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "pretty": true,
@@ -45,5 +45,8 @@
     "strict": true,
     "noImplicitAny": false
   },
-  "include": ["project.types.d.ts", "packages/**/*"]
+  "include": [
+    "project.types.d.ts",
+    "packages/**/*"
+  ]
 }
