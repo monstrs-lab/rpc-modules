@@ -966,18 +966,18 @@ __metadata:
   dependencies:
     "@bufbuild/protobuf": "npm:^1.2.1"
     "@monstrs/query-types": "npm:^0.0.7"
-    "@monstrs/rpc-transformers": "workspace:0.0.4"
+    "@monstrs/rpc-transformers": "workspace:0.0.5"
     class-transformer: "npm:^0.5.1"
     class-validator: "npm:^0.14.0"
   peerDependencies:
     "@bufbuild/protobuf": ^1
-    "@monstrs/rpc-transformers": "workspace:0.0.4"
+    "@monstrs/rpc-transformers": "workspace:0.0.5"
     class-transformer: ^0.5
     class-validator: ^0.14
   languageName: unknown
   linkType: soft
 
-"@monstrs/rpc-transformers@workspace:0.0.4, @monstrs/rpc-transformers@workspace:packages/rpc-transformers":
+"@monstrs/rpc-transformers@workspace:0.0.5, @monstrs/rpc-transformers@workspace:packages/rpc-transformers":
   version: 0.0.0-use.local
   resolution: "@monstrs/rpc-transformers@workspace:packages/rpc-transformers"
   dependencies:
