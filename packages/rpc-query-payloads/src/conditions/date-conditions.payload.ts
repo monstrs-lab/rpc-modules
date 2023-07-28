@@ -13,7 +13,7 @@ export class DateConditionsPayload {
         value: boolean
       }
       eq?: {
-        value: Date | Timestamp | undefined
+        value?: Date | Timestamp | undefined
       }
     }
   ) {}
