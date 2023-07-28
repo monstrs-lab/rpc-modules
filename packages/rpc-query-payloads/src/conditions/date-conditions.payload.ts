@@ -1,4 +1,4 @@
-import type { Query }          from '@monstrs/query-types'
+import type { Timestamp }      from '@bufbuild/protobuf'
 
 import { IsOptional }          from 'class-validator'
 import { ValidateNested }      from 'class-validator'
@@ -7,7 +7,16 @@ import { BooleanValuePayload } from '../values/index.js'
 import { DateValuePayload }    from '../values/index.js'
 
 export class DateConditionsPayload {
-  constructor(private readonly conditions: Query.DateType['conditions']) {}
+  constructor(
+    private readonly conditions?: {
+      exists?: {
+        value: boolean
+      }
+      eq?: {
+        value: Date | Timestamp | undefined
+      }
+    }
+  ) {}
 
   @IsOptional()
   @ValidateNested()
