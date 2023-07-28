@@ -3,9 +3,15 @@ import type { Query } from '@monstrs/query-types'
 import { IsInt }      from 'class-validator'
 
 export class PagerPayload implements Query.Pager {
-  @IsInt()
-  take!: number
+  constructor(private readonly pager: Query.Pager) {}
 
   @IsInt()
-  offset!: number
+  get take(): number {
+    return this.pager.take
+  }
+
+  @IsInt()
+  get offset(): number {
+    return this.pager.offset
+  }
 }
