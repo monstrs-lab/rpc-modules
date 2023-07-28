@@ -1,3 +1,5 @@
+import type { Query }          from '@monstrs/query-types'
+
 import { IsOptional }          from 'class-validator'
 import { ValidateNested }      from 'class-validator'
 
@@ -5,15 +7,29 @@ import { StringValuePayload }  from '../values/index.js'
 import { StringsValuePayload } from '../values/index.js'
 
 export class StringConditionsPayload {
-  @IsOptional()
-  @ValidateNested()
-  contains?: StringValuePayload
+  constructor(private readonly conditions: Query.StringType['conditions']) {}
 
   @IsOptional()
   @ValidateNested()
-  eq?: StringValuePayload;
+  get contains(): StringValuePayload | undefined {
+    return this.conditions?.contains?.value
+      ? new StringValuePayload(this.conditions?.contains?.value)
+      : undefined
+  }
 
   @IsOptional()
   @ValidateNested()
-  in?: StringsValuePayload
+  get eq(): StringValuePayload | undefined {
+    return this.conditions?.eq?.value
+      ? new StringValuePayload(this.conditions?.eq?.value)
+      : undefined
+  }
+
+  @IsOptional()
+  @ValidateNested()
+  get in(): StringsValuePayload | undefined {
+    return this.conditions?.in?.values
+      ? new StringsValuePayload(this.conditions?.in?.values)
+      : undefined
+  }
 }
