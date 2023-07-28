@@ -6,11 +6,17 @@ import { ValidateNested }        from 'class-validator'
 import { DateConditionsPayload } from '../conditions/index.js'
 
 export class DateQueryPayload implements Query.DateType {
+  constructor(private readonly query: Query.DateType) {}
+
   @IsOptional()
   @IsEnum(Query.Operator)
-  operator?: Query.Operator.AND | Query.Operator.OR | 0 | 1
+  get operator(): Query.Operator.AND | Query.Operator.OR | 0 | 1 | undefined {
+    return this.query.operator
+  }
 
   @IsOptional()
   @ValidateNested()
-  conditions?: DateConditionsPayload
+  get conditions(): DateConditionsPayload | undefined {
+    return new DateConditionsPayload(this.query.conditions)
+  }
 }
