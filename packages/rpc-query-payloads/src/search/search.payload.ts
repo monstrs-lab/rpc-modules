@@ -1,14 +1,20 @@
-import type { Query }              from '@monstrs/query-types'
+import type { Query }         from '@monstrs/query-types'
 
-import type { SearchFieldPayload } from './search-field.payload.js'
+import { IsString }           from 'class-validator'
+import { ValidateNested }     from 'class-validator'
 
-import { IsString }                from 'class-validator'
-import { ValidateNested }          from 'class-validator'
+import { SearchFieldPayload } from './search-field.payload.js'
 
 export class SearchPayload implements Query.Search {
+  constructor(private readonly search: Query.Search) {}
+
   @ValidateNested()
-  fields!: Array<SearchFieldPayload>
+  get fields(): Array<SearchFieldPayload> {
+    return this.search.fields.map((field) => new SearchFieldPayload(field))
+  }
 
   @IsString()
-  value!: string
+  get value(): string {
+    return this.search.value
+  }
 }
