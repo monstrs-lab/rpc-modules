@@ -16,7 +16,7 @@ export class DateQueryPayload implements Query.DateType {
           value: boolean
         }
         eq?: {
-          value: Date | Timestamp | undefined
+          value?: Date | Timestamp | undefined
         }
       }
     }

@@ -5,11 +5,11 @@ export class DateValuePayload {
   @IsDate()
   value!: Date
 
-  constructor(value: Date | Timestamp) {
+  constructor(value?: Date | Timestamp) {
     if (value instanceof Timestamp) {
       this.value = value.toDate()
     } else {
-      this.value = value
+      this.value = value!
     }
   }
 }
