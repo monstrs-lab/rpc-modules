@@ -1,9 +1,11 @@
-import { IsDate }                   from 'class-validator'
-
-import { DateToTimestampTransform } from '@monstrs/rpc-transformers'
+import { IsDate } from 'class-validator'
 
 export class DateValuePayload {
   @IsDate()
-  @DateToTimestampTransform()
   value!: Date
+
+  constructor(value: Date) {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    this.value = (value as any)?.toDate() || value
+  }
 }
