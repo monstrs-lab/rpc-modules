@@ -26,7 +26,7 @@ const RAW_RUNTIME_STATE =
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
     ["@monstrs/rpc-query-payloads", ["workspace:packages/rpc-query-payloads"]],\
-    ["@monstrs/rpc-transformers", ["virtual:c92ae8503fca4e2adc83ec417d764c21f61556e00571a4914ae72f49e38a7e2b214248d2bdfa5ad40ed8cfcc219692bf8f4fd20e93064771a800f1cb2ecbf6e3#workspace:packages/rpc-transformers", "workspace:packages/rpc-transformers"]],\
+    ["@monstrs/rpc-transformers", ["workspace:packages/rpc-transformers"]],\
     ["rpc-modules", ["workspace:."]]\
   ],\
   "fallbackPool": [\
@@ -1499,33 +1499,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/rpc-query-payloads/",\
         "packageDependencies": [\
           ["@monstrs/rpc-query-payloads", "workspace:packages/rpc-query-payloads"],\
-          ["@bufbuild/protobuf", "npm:1.2.1"],\
           ["@monstrs/query-types", "npm:0.0.7"],\
-          ["@monstrs/rpc-transformers", "virtual:c92ae8503fca4e2adc83ec417d764c21f61556e00571a4914ae72f49e38a7e2b214248d2bdfa5ad40ed8cfcc219692bf8f4fd20e93064771a800f1cb2ecbf6e3#workspace:packages/rpc-transformers"],\
-          ["class-transformer", "npm:0.5.1"],\
           ["class-validator", "npm:0.14.0"]\
         ],\
         "linkType": "SOFT"\
       }]\
     ]],\
     ["@monstrs/rpc-transformers", [\
-      ["virtual:c92ae8503fca4e2adc83ec417d764c21f61556e00571a4914ae72f49e38a7e2b214248d2bdfa5ad40ed8cfcc219692bf8f4fd20e93064771a800f1cb2ecbf6e3#workspace:packages/rpc-transformers", {\
-        "packageLocation": "./.yarn/__virtual__/@monstrs-rpc-transformers-virtual-0a52b93dcd/1/packages/rpc-transformers/",\
-        "packageDependencies": [\
-          ["@monstrs/rpc-transformers", "virtual:c92ae8503fca4e2adc83ec417d764c21f61556e00571a4914ae72f49e38a7e2b214248d2bdfa5ad40ed8cfcc219692bf8f4fd20e93064771a800f1cb2ecbf6e3#workspace:packages/rpc-transformers"],\
-          ["@bufbuild/protobuf", "npm:1.2.1"],\
-          ["@types/bufbuild__protobuf", null],\
-          ["@types/class-transformer", null],\
-          ["class-transformer", "npm:0.5.1"]\
-        ],\
-        "packagePeers": [\
-          "@bufbuild/protobuf",\
-          "@types/bufbuild__protobuf",\
-          "@types/class-transformer",\
-          "class-transformer"\
-        ],\
-        "linkType": "SOFT"\
-      }],\
       ["workspace:packages/rpc-transformers", {\
         "packageLocation": "./packages/rpc-transformers/",\
         "packageDependencies": [\
