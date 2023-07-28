@@ -1499,6 +1499,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/rpc-query-payloads/",\
         "packageDependencies": [\
           ["@monstrs/rpc-query-payloads", "workspace:packages/rpc-query-payloads"],\
+          ["@bufbuild/protobuf", "npm:1.2.1"],\
           ["@monstrs/query-types", "npm:0.0.7"],\
           ["class-validator", "npm:0.14.0"]\
         ],\

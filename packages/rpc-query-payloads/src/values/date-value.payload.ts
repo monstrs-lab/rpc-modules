@@ -1,11 +1,15 @@
-import { IsDate } from 'class-validator'
+import { Timestamp } from '@bufbuild/protobuf'
+import { IsDate }    from 'class-validator'
 
 export class DateValuePayload {
   @IsDate()
   value!: Date
 
-  constructor(value: Date) {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
-    this.value = (value as any)?.toDate() || value
+  constructor(value: Date | Timestamp) {
+    if (value instanceof Timestamp) {
+      this.value = value.toDate()
+    } else {
+      this.value = value
+    }
   }
 }
