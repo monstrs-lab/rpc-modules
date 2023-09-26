@@ -16,7 +16,7 @@ export class DateRangeQueryPayload implements Query.DateRangeType {
           value: Date | Timestamp | undefined
         }
         to?: {
-          value?: Date | Timestamp | undefined
+          value: Date | Timestamp | undefined
         }
       }
     }

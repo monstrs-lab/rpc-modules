@@ -9,10 +9,10 @@ export class DateRangeConditionsPayload {
   constructor(
     private readonly conditions?: {
       from?: {
-        value?: Date | Timestamp | undefined
+        value: Date | Timestamp | undefined
       }
       to?: {
-        value?: Date | Timestamp | undefined
+        value: Date | Timestamp | undefined
       }
     }
   ) {}
