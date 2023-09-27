@@ -37,7 +37,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@monstrs/tools-runtime", "npm:0.2.17"],\
-          ["@types/node", "npm:20.3.1"],\
+          ["@types/node", "npm:20.7.0"],\
           ["typescript", "patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
         ],\
         "linkType": "SOFT"\
@@ -846,10 +846,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@bufbuild/protobuf", [\
-      ["npm:1.2.1", {\
-        "packageLocation": "./.yarn/cache/@bufbuild-protobuf-npm-1.2.1-cb59673fd7-c99edf44c5.zip/node_modules/@bufbuild/protobuf/",\
+      ["npm:1.3.1", {\
+        "packageLocation": "./.yarn/cache/@bufbuild-protobuf-npm-1.3.1-dc09ed1943-a3bcdf15ac.zip/node_modules/@bufbuild/protobuf/",\
         "packageDependencies": [\
-          ["@bufbuild/protobuf", "npm:1.2.1"]\
+          ["@bufbuild/protobuf", "npm:1.3.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1499,7 +1499,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/rpc-query-payloads/",\
         "packageDependencies": [\
           ["@monstrs/rpc-query-payloads", "workspace:packages/rpc-query-payloads"],\
-          ["@bufbuild/protobuf", "npm:1.2.1"],\
+          ["@bufbuild/protobuf", "npm:1.3.1"],\
           ["@monstrs/query-types", "npm:0.0.8"],\
           ["class-validator", "npm:0.14.0"]\
         ],\
@@ -1511,7 +1511,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/rpc-transformers/",\
         "packageDependencies": [\
           ["@monstrs/rpc-transformers", "workspace:packages/rpc-transformers"],\
-          ["@bufbuild/protobuf", "npm:1.2.1"],\
+          ["@bufbuild/protobuf", "npm:1.3.1"],\
           ["class-transformer", "npm:0.5.1"]\
         ],\
         "linkType": "SOFT"\
@@ -2051,6 +2051,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-node-npm-20.3.1-86012346c0-7e8a6f5d6f.zip/node_modules/@types/node/",\
         "packageDependencies": [\
           ["@types/node", "npm:20.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:20.7.0", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-20.7.0-55c329fdd3-935c8a30e3.zip/node_modules/@types/node/",\
+        "packageDependencies": [\
+          ["@types/node", "npm:20.7.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7495,7 +7502,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["rpc-modules", "workspace:."],\
           ["@monstrs/tools-runtime", "npm:0.2.17"],\
-          ["@types/node", "npm:20.3.1"],\
+          ["@types/node", "npm:20.7.0"],\
           ["typescript", "patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
         ],\
         "linkType": "SOFT"\
