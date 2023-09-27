@@ -13,10 +13,10 @@ export class DateRangeQueryPayload implements Query.DateRangeType {
       operator: Query.Operator.AND | Query.Operator.OR | 0 | 1 | undefined
       conditions?: {
         from?: {
-          value: Date | Timestamp | undefined
+          value?: Date | Timestamp | undefined
         }
         to?: {
-          value: Date | Timestamp | undefined
+          value?: Date | Timestamp | undefined
         }
       }
     }
