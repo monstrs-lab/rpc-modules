@@ -13,7 +13,7 @@ export class IdConditionsPayload {
   @IsOptional()
   @ValidateNested()
   get exists(): BooleanValuePayload | undefined {
-    return this.conditions?.exists?.value
+    return this.conditions?.exists?.value === true || this.conditions?.exists?.value === false
       ? new BooleanValuePayload(this.conditions?.exists?.value)
       : undefined
   }
