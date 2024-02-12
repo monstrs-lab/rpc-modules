@@ -435,10 +435,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bufbuild/protobuf@npm:^1.3.1":
-  version: 1.3.1
-  resolution: "@bufbuild/protobuf@npm:1.3.1"
-  checksum: a3bcdf15aceca55adbeea1180069d9ddd5bea82293f93c906672c2f5bda776b4999cec3b9d7822cd95b24e51d1f6b5cc4fa7c7eb01a6c6edf3f25c833549daf5
+"@bufbuild/protobuf@npm:^1.7.2":
+  version: 1.7.2
+  resolution: "@bufbuild/protobuf@npm:1.7.2"
+  checksum: 37a968b7d314c1f2e2b996bb287c72dbeaacd5bc0d92e2f706437a51c4e483ff85b97994428e252d6acf99bd7b16435471413ae3af1bd9b416d72ab3f0decd22
   languageName: node
   linkType: hard
 
@@ -962,10 +962,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/query-types@npm:^0.0.8":
-  version: 0.0.8
-  resolution: "@monstrs/query-types@npm:0.0.8"
-  checksum: 7e1be2bc4cc61d1f16d09e41e39a2175c46f1ad888cac07e174f42860961aff1137e3944c4741dc98ae3f44551d65071dcb8f13aad6961a09deb85c9a3783279
+"@monstrs/query-types@npm:^0.0.9":
+  version: 0.0.9
+  resolution: "@monstrs/query-types@npm:0.0.9"
+  checksum: 4ea59ae4a6b89a2f0a6cfc4b3148eef5b8b4c04f914dcfd1225d48955f6ad590feae5027ae178f92bfc9c665a34b524665be1ca94048623ffb25eaab8344747d
   languageName: node
   linkType: hard
 
@@ -973,9 +973,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/rpc-query-payloads@workspace:packages/rpc-query-payloads"
   dependencies:
-    "@bufbuild/protobuf": "npm:^1.3.1"
-    "@monstrs/query-types": "npm:^0.0.8"
-    class-validator: "npm:^0.14.0"
+    "@bufbuild/protobuf": "npm:^1.7.2"
+    "@monstrs/query-types": "npm:^0.0.9"
+    class-validator: "npm:^0.14.1"
   peerDependencies:
     "@bufbuild/protobuf": ^1
     class-validator: ^0.14
@@ -986,7 +986,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/rpc-transformers@workspace:packages/rpc-transformers"
   dependencies:
-    "@bufbuild/protobuf": "npm:^1.3.1"
+    "@bufbuild/protobuf": "npm:^1.7.2"
     class-transformer: "npm:^0.5.1"
   peerDependencies:
     "@bufbuild/protobuf": ^1
@@ -1367,10 +1367,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.7.0":
-  version: 20.7.0
-  resolution: "@types/node@npm:20.7.0"
-  checksum: 935c8a30e3dbb9d10151316522571c7dacd8277a66db821a0581a9ff18c23d780c3e155437b72399b70a081616bcd87c3d745565527df721acf2a0577ccf906c
+"@types/node@npm:^20.11.17":
+  version: 20.11.17
+  resolution: "@types/node@npm:20.11.17"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: 1f30dae80b416cbf38f133a619ffb0e9fb9e7bc58f82d900bf73816ae5781740c4640892bf5971dd9c12570d5d05241646be3e7540bb4e059322ec6af4e51e15
   languageName: node
   linkType: hard
 
@@ -1388,10 +1390,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/validator@npm:^13.7.10":
-  version: 13.7.17
-  resolution: "@types/validator@npm:13.7.17"
-  checksum: 46ec9b8bc11d91a575aead891a9c1d2f23bc28369449cb62415d663262d1d0e96debe75ceac626102a17a0a7a899330626ec36c8d4e84d337c705daed314fed5
+"@types/validator@npm:^13.11.8":
+  version: 13.11.9
+  resolution: "@types/validator@npm:13.11.9"
+  checksum: 856ebfcfe25d6c91a90235e0eb27302a737832530898195bbfb265da52ae7fe6d68f684942574f8818d3c262cae7a1de99f145dac73fc57217933af1bfc199cb
   languageName: node
   linkType: hard
 
@@ -2396,14 +2398,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"class-validator@npm:^0.14.0":
-  version: 0.14.0
-  resolution: "class-validator@npm:0.14.0"
+"class-validator@npm:^0.14.1":
+  version: 0.14.1
+  resolution: "class-validator@npm:0.14.1"
   dependencies:
-    "@types/validator": "npm:^13.7.10"
-    libphonenumber-js: "npm:^1.10.14"
-    validator: "npm:^13.7.0"
-  checksum: 1f7c34052f0c342b1d27c5aec7c42b646bb77a56874acc0d8003e2ad8f0294e7da18b43e9caaac8e8817cbb309cf9f14bcebe4611994390ca4818f3b393783dc
+    "@types/validator": "npm:^13.11.8"
+    libphonenumber-js: "npm:^1.10.53"
+    validator: "npm:^13.9.0"
+  checksum: 946e914e47548b5081449c720ea6a4877bac63dc960e14fca4b990b56e64efe3802d12f07ec22d6420c290245b72ea2d646939239f2a3b597794e6c4c2a4f2ae
   languageName: node
   linkType: hard
 
@@ -5131,10 +5133,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"libphonenumber-js@npm:^1.10.14":
-  version: 1.10.34
-  resolution: "libphonenumber-js@npm:1.10.34"
-  checksum: 037e55164672a51f70ce45c3062400c90808aab3f8335eb7fe6e18ede43eeaae2286a682ce5f2472f5ed1d481d593ca27b2f9c15b0e6bef308f06e6d649336d5
+"libphonenumber-js@npm:^1.10.53":
+  version: 1.10.55
+  resolution: "libphonenumber-js@npm:1.10.55"
+  checksum: ce086d6b09653ca327cec6d7ae72112f338ec5d4e62811734d52d14816e728f139a9423aa07204536e26e563ec5bf79fb908ded7e47c1a915a44542b52d318d1
   languageName: node
   linkType: hard
 
@@ -6242,7 +6244,7 @@ __metadata:
   resolution: "rpc-modules@workspace:."
   dependencies:
     "@monstrs/tools-runtime": "npm:^0.2.19"
-    "@types/node": "npm:^20.7.0"
+    "@types/node": "npm:^20.11.17"
     typescript: "npm:^5.3.3"
   languageName: unknown
   linkType: soft
@@ -7062,6 +7064,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"undici-types@npm:~5.26.4":
+  version: 5.26.5
+  resolution: "undici-types@npm:5.26.5"
+  checksum: bb673d7876c2d411b6eb6c560e0c571eef4a01c1c19925175d16e3a30c4c428181fb8d7ae802a261f283e4166a0ac435e2f505743aa9e45d893f9a3df017b501
+  languageName: node
+  linkType: hard
+
 "unique-filename@npm:^3.0.0":
   version: 3.0.0
   resolution: "unique-filename@npm:3.0.0"
@@ -7128,10 +7137,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"validator@npm:^13.7.0":
-  version: 13.9.0
-  resolution: "validator@npm:13.9.0"
-  checksum: 0a0af4b37779671b53ef790aa9d36f71a605c9d41c6daf198d2a1051ce549bcdca3313fa3b52c8fa24577e1a4968ec9404ad8a928d3607d51bccef6d6e33bee7
+"validator@npm:^13.9.0":
+  version: 13.11.0
+  resolution: "validator@npm:13.11.0"
+  checksum: 0107da3add5a4ebc6391dac103c55f6d8ed055bbcc29a4c9cbf89eacfc39ba102a5618c470bdc33c6487d30847771a892134a8c791f06ef0962dd4b7a60ae0f5
   languageName: node
   linkType: hard
 
