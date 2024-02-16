@@ -12,7 +12,9 @@ export class IntConditionsPayload {
   @IsOptional()
   @ValidateNested()
   get eq(): IntValuePayload | undefined {
-    return this.conditions?.eq?.value ? new IntValuePayload(this.conditions?.eq?.value) : undefined
+    return this.conditions?.eq?.value && this.conditions?.eq?.value >= 0
+      ? new IntValuePayload(this.conditions?.eq?.value)
+      : undefined
   }
 
   @IsOptional()
