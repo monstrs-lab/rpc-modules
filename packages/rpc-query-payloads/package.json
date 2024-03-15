@@ -17,10 +17,10 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@monstrs/query-types": "^0.0.9"
+    "@monstrs/query-types": "^0.0.10"
   },
   "devDependencies": {
-    "@bufbuild/protobuf": "^1.7.2",
+    "@bufbuild/protobuf": "^1.8.0",
     "class-validator": "^0.14.1"
   },
   "peerDependencies": {
