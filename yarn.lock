@@ -1579,10 +1579,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/query-types@npm:^0.0.10":
-  version: 0.0.10
-  resolution: "@monstrs/query-types@npm:0.0.10"
-  checksum: 10c0/9233bc8ee8c9d48d2e617c8d70546e25136800d0e2ce67ee0ceb86bdc6ba2c7315e273abcd27c487f97d5a63a29e2443c86a9379908dc18ceaffd73e72c10c64
+"@monstrs/query-types@npm:^0.0.11":
+  version: 0.0.11
+  resolution: "@monstrs/query-types@npm:0.0.11"
+  checksum: 10c0/c86a4f064485ddae4476ced0b96f65d055c331be8f602789eafb1f6fbc855013e5a0f4d86562389a738982187cb244c59c56c8d7c3610448706bfc2d19a4b4b9
   languageName: node
   linkType: hard
 
@@ -1591,7 +1591,7 @@ __metadata:
   resolution: "@monstrs/rpc-query-payloads@workspace:packages/rpc-query-payloads"
   dependencies:
     "@bufbuild/protobuf": "npm:^1.8.0"
-    "@monstrs/query-types": "npm:^0.0.10"
+    "@monstrs/query-types": "npm:^0.0.11"
     class-validator: "npm:^0.14.1"
   peerDependencies:
     "@bufbuild/protobuf": ^1

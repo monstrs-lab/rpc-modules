@@ -2162,10 +2162,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@monstrs/query-types", [\
-      ["npm:0.0.10", {\
-        "packageLocation": "../.yarn/berry/cache/@monstrs-query-types-npm-0.0.10-591e3b984e-10c0.zip/node_modules/@monstrs/query-types/",\
+      ["npm:0.0.11", {\
+        "packageLocation": "../.yarn/berry/cache/@monstrs-query-types-npm-0.0.11-3e7866cd2c-10c0.zip/node_modules/@monstrs/query-types/",\
         "packageDependencies": [\
-          ["@monstrs/query-types", "npm:0.0.10"]\
+          ["@monstrs/query-types", "npm:0.0.11"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2176,7 +2176,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@monstrs/rpc-query-payloads", "workspace:packages/rpc-query-payloads"],\
           ["@bufbuild/protobuf", "npm:1.8.0"],\
-          ["@monstrs/query-types", "npm:0.0.10"],\
+          ["@monstrs/query-types", "npm:0.0.11"],\
           ["class-validator", "npm:0.14.1"]\
         ],\
         "linkType": "SOFT"\
