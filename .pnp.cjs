@@ -1111,10 +1111,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@bufbuild/protobuf", [\
-      ["npm:1.8.0", {\
-        "packageLocation": "../.yarn/berry/cache/@bufbuild-protobuf-npm-1.8.0-4c9f06a7f2-10c0.zip/node_modules/@bufbuild/protobuf/",\
+      ["npm:1.10.0", {\
+        "packageLocation": "../.yarn/berry/cache/@bufbuild-protobuf-npm-1.10.0-7f066cde74-10c0.zip/node_modules/@bufbuild/protobuf/",\
         "packageDependencies": [\
-          ["@bufbuild/protobuf", "npm:1.8.0"]\
+          ["@bufbuild/protobuf", "npm:1.10.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2162,10 +2162,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@monstrs/query-types", [\
-      ["npm:0.0.11", {\
-        "packageLocation": "../.yarn/berry/cache/@monstrs-query-types-npm-0.0.11-3e7866cd2c-10c0.zip/node_modules/@monstrs/query-types/",\
+      ["npm:0.0.12", {\
+        "packageLocation": "../.yarn/berry/cache/@monstrs-query-types-npm-0.0.12-79b9ad2856-10c0.zip/node_modules/@monstrs/query-types/",\
         "packageDependencies": [\
-          ["@monstrs/query-types", "npm:0.0.11"]\
+          ["@monstrs/query-types", "npm:0.0.12"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2175,8 +2175,8 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/rpc-query-payloads/",\
         "packageDependencies": [\
           ["@monstrs/rpc-query-payloads", "workspace:packages/rpc-query-payloads"],\
-          ["@bufbuild/protobuf", "npm:1.8.0"],\
-          ["@monstrs/query-types", "npm:0.0.11"],\
+          ["@bufbuild/protobuf", "npm:1.10.0"],\
+          ["@monstrs/query-types", "npm:0.0.12"],\
           ["class-validator", "npm:0.14.1"]\
         ],\
         "linkType": "SOFT"\
@@ -2187,7 +2187,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/rpc-transformers/",\
         "packageDependencies": [\
           ["@monstrs/rpc-transformers", "workspace:packages/rpc-transformers"],\
-          ["@bufbuild/protobuf", "npm:1.8.0"],\
+          ["@bufbuild/protobuf", "npm:1.10.0"],\
           ["class-transformer", "npm:0.5.1"]\
         ],\
         "linkType": "SOFT"\

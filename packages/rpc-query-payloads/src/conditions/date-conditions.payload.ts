@@ -15,6 +15,12 @@ export class DateConditionsPayload {
       eq?: {
         value?: Date | Timestamp | undefined
       }
+      lt?: {
+        value?: Date | Timestamp | undefined
+      }
+      gt?: {
+        value?: Date | Timestamp | undefined
+      }
     }
   ) {}
 
@@ -30,5 +36,17 @@ export class DateConditionsPayload {
   @ValidateNested()
   get eq(): DateValuePayload | undefined {
     return this.conditions?.eq?.value ? new DateValuePayload(this.conditions?.eq?.value) : undefined
+  }
+
+  @IsOptional()
+  @ValidateNested()
+  get lt(): DateValuePayload | undefined {
+    return this.conditions?.lt?.value ? new DateValuePayload(this.conditions?.lt?.value) : undefined
+  }
+
+  @IsOptional()
+  @ValidateNested()
+  get gt(): DateValuePayload | undefined {
+    return this.conditions?.gt?.value ? new DateValuePayload(this.conditions?.gt?.value) : undefined
   }
 }
