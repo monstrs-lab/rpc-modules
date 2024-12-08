@@ -1,0 +1,3 @@
+releases:
+  "@monstrs/rpc-query-payloads": patch
+  "@monstrs/rpc-transformers": patch
