@@ -687,10 +687,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bufbuild/protobuf@npm:^1.8.0":
-  version: 1.8.0
-  resolution: "@bufbuild/protobuf@npm:1.8.0"
-  checksum: 10c0/1f8a5a780f6272e7e8d8bb835c2b474485bf9e92213bef96f0fcd550fd77db064c145a5dabdc7b2121167c530fd28b09723d144a6c6baff88296ce6f5860808d
+"@bufbuild/protobuf@npm:^1.10.0":
+  version: 1.10.0
+  resolution: "@bufbuild/protobuf@npm:1.10.0"
+  checksum: 10c0/5487b9c2e63846d0e3bde4d025cc77ae44a22166a5d6c184df0da5581e1ab6d66dd115af0ccad814576dcd011bb1b93989fb0ac1eb4ae452979bb8b186693ba0
   languageName: node
   linkType: hard
 
@@ -1579,10 +1579,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/query-types@npm:^0.0.11":
-  version: 0.0.11
-  resolution: "@monstrs/query-types@npm:0.0.11"
-  checksum: 10c0/c86a4f064485ddae4476ced0b96f65d055c331be8f602789eafb1f6fbc855013e5a0f4d86562389a738982187cb244c59c56c8d7c3610448706bfc2d19a4b4b9
+"@monstrs/query-types@npm:^0.0.12":
+  version: 0.0.12
+  resolution: "@monstrs/query-types@npm:0.0.12"
+  checksum: 10c0/2cc84a010c88fdf871f385f56b7bba92685bfb6fa9b8ee678de173919d971b01667231c16426372234c85f4cb4a970a0c0a41abe4ef2ac2447cffd344701b245
   languageName: node
   linkType: hard
 
@@ -1590,8 +1590,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/rpc-query-payloads@workspace:packages/rpc-query-payloads"
   dependencies:
-    "@bufbuild/protobuf": "npm:^1.8.0"
-    "@monstrs/query-types": "npm:^0.0.11"
+    "@bufbuild/protobuf": "npm:^1.10.0"
+    "@monstrs/query-types": "npm:^0.0.12"
     class-validator: "npm:^0.14.1"
   peerDependencies:
     "@bufbuild/protobuf": ^1
@@ -1603,7 +1603,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/rpc-transformers@workspace:packages/rpc-transformers"
   dependencies:
-    "@bufbuild/protobuf": "npm:^1.8.0"
+    "@bufbuild/protobuf": "npm:^1.10.0"
     class-transformer: "npm:^0.5.1"
   peerDependencies:
     "@bufbuild/protobuf": ^1
